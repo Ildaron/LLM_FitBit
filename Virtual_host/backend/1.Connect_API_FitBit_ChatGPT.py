@@ -10,20 +10,11 @@ import fitbit
 from datetime import datetime, timedelta
 
 load_dotenv()
-
-# ---------- CONFIG ----------
-#CLIENT_ID = os.getenv('23TRFB')
-#CLIENT_SECRET = os.getenv("15eeaa771aedb966c5a700d42086c64c")
-#REDIRECT_URI = os.getenv("http://127.0.0.1:8080/")
-
 CLIENT_ID = '23TRFB'
-CLIENT_SECRET = '15eeaa771aedb966c5a700d42086c64c'
+CLIENT_SECRET = 'put from fitbit API'
 REDIRECT_URI = 'http://127.0.0.1:8080/'
 
-openai_client = OpenAI(api_key="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")
-
-
-
+openai_client = OpenAI(api_key="Password")
 app = FastAPI()
 
 app.add_middleware(
