@@ -1,4 +1,3 @@
-
 import os
 import requests
 from fastapi import FastAPI
@@ -8,13 +7,17 @@ from dotenv import load_dotenv
 import gather_keys_oauth2 as oauth2
 import fitbit
 from datetime import datetime, timedelta
-
 load_dotenv()
-CLIENT_ID = '23TRFB'
-CLIENT_SECRET = 'put from fitbit API'
-REDIRECT_URI = 'http://127.0.0.1:8080/'
+# ---------- CONFIG ----------
+#CLIENT_ID = os.getenv('23TRFB')
+#CLIENT_SECRET = os.getenv("15eeaa771aedb966c5a700d42086c64c")
+#REDIRECT_URI = os.getenv("http://127.0.0.1:8080/")
 
-openai_client = OpenAI(api_key="Password")
+CLIENT_ID = '23TRFB'
+CLIENT_SECRET = '15eeaa771aedb966c5a700d42086c64c'
+REDIRECT_URI = 'http://127.0.0.1:8080/'
+openai_client = OpenAI(api_key="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")
+
 app = FastAPI()
 
 app.add_middleware(
@@ -37,7 +40,8 @@ access_token = server.fitbit.session.token["access_token"]
 # ---------- HELPERS ----------
 def get_latest_heart_rate():
     yesterday = (datetime.now() - timedelta(1)).strftime('%Y-%m-%d')
-    url = f'https://api.fitbit.com/1/user/-/activities/heart/date/{yesterday}/1d/1min.json'
+    url = 'https://api.fitbit.com/1/user/-/activities/heart/date/2026-01-23/1d/1min.json'
+
     #url = "https://api.fitbit.com/1/user/-/activities/heart/date/today/1d/1min.json"
     headers = {"Authorization": f"Bearer {access_token}"}
 
