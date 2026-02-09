@@ -23,3 +23,12 @@ This project was born out of a LinkedIn community call for "Open to Work" talent
   <img src="https://github.com/Ildaron/LLM_FitBit/blob/main/images/fitbit.jpeg" width="50%" height="50%" alt="generals view">
 </p>
   
+
+
+Road Map
+- Mobile App
+- Tunning LLM
+- Real-Time Support
+
+  Contact ildarr2016@gmail.com  
+ 
