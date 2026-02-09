@@ -19,3 +19,7 @@ Disclaimer: This project is for educational and lifestyle purposes only. It is n
 🤝 Community & Collaboration
 This project was born out of a LinkedIn community call for "Open to Work" talent and passionate developers. We believe in building in public and supporting one another.
 
+<p align="center">
+  <img src="https://github.com/Ildaron/LLM_FitBit/blob/main/images/fitbit.jpeg" width="50%" height="50%" alt="generals view">
+</p>
+  
