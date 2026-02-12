@@ -1,4 +1,4 @@
-# LLM_FitBit
+# LLM_FitBit (in process)
 LLM for FitBit is an initiative designed to bridge the gap between wearable health data and Large Language Models. Instead of just looking at static graphs, we want users to "talk" to their data and receive actionable, human-language insights.  
 
 🌟 The Vision
